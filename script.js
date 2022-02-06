@@ -48,8 +48,6 @@ function s() {
     td8.innerText = text8
     td6.innerText += res
 
-
-
     document.getElementById("first-name").value = "";
     document.getElementById("last-name").value = "";
     document.getElementById("address").value = "";
@@ -57,8 +55,6 @@ function s() {
     document.getElementById("t5").value = "";
     document.getElementById("t7").value = "";
     document.getElementById("t8").value = "";
-
-
 
   }
 
