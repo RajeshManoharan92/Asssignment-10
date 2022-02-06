@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <style>
+    label {
+      padding-top: 25px;
+      padding-left: 100px;
+    }
+
+    input,
+    select {
+      text-align: center;
+      width: 200px;
+
+
+
+    }
+
+    table,
+    td,
+    tr,
+    th {
+      border: 2px solid black;
+      border-collapse: collapse;
+      height: 50px;
+      text-align: center;
+    }
+
+    button {
+      text-align: center;
+
+    }
+
+    th {
+      width: 200px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #D6EEEE;
+    }
+
+    span {
+      color: red;
+
+    }
+
+    #t6 {
+      background-color: whitesmoke;
+      color: blue;
+    }
+
+    h1,
+    p {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="title">DOM Manipulation With Forms</h1>
+  <p id="description">Forms to select your personal details </p>
+  <form id="form">
+
+    <label for="FN">First name<span>*</span></label>
+    <input type="text" name="FN" id="first-name" placeholder="First Name" required>
+
+    <label for="LN">Last Name<span>*</span></label>
+    <input type="text" name="LN" id="last-name" placeholder="Last Name" required>
+
+    <label for="Add">Address<span>*</span></label>
+    <input type="text" name="Add" id="address" placeholder="Address" required>
+
+    <label for="PIN">Pincode<span>*</span></label>
+    <input type="text" name="PIN" id="pincode" placeholder="Pincode" required> <br>
+
+    <label for="GEN" style="padding-left: 8%;">Gender<span>*</span></label>
+
+    <select style="padding-left: 180px;" name="GEN" id="t5" required> Select
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Trangender">Trangender</option>
+    </select>
+    
+
+    <label for="STATE" style="padding-left: 9%">State<span>*</span></label>
+    <input type="text" name="STATE" id="t7" placeholder="State" required>
+
+    <label for="CN">Country<span>*</span></label>
+    <input type="text" name="CN" id="t8" placeholder="Country" required> <br>
+
+
+    <label for="CF">Choice of Food (Must Select Two Foods )<span>*</span></label> <br>
+    <input type="checkbox" name="check[]" id="t6" required value="Briyani"> Briyani <br>
+    <input type="checkbox" name="check[]" id="t6" required value="Fried Rice"> Fried Rice <br>
+    <input type="checkbox" name="check[]" id="t6" required value="Parota"> Parota <br>
+    <input type="checkbox" name="check[]" id="t6" required value="Grill Chicken"> Grill Chicken <br>
+    <input type="checkbox" name="check[]" id="t6" required value="Shawarma"> Shawarma <br></br>
+
+
+    <button type="submit" style="margin-left: 19cm;" id="submit" class="btn btn-success" onclick="s()">Submit</button>
+    <br><br>
+
+
+
+    <div>
+      <table id="table1" class="table" style="width: 100%">
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th style="width: 30%;">Address</th>
+          <th>Pincode</th>
+          <th>Gender</th>
+          <th>Choise of Food</th>
+          <th>State</th>
+          <th>Country</th>
+        </tr>
+      </table>
+    </div>
+  </form>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
